@@ -5,35 +5,35 @@
 
 /* Assign a unique ID to this sensor at the same time */
 Adafruit_LSM303_Mag_Unified mag = Adafruit_LSM303_Mag_Unified(12345);
-//Adafruit_LSM303_Accel_Unified accel = Adafruit_LSM303_Accel_Unified(54321);
+Adafruit_LSM303_Accel_Unified accel = Adafruit_LSM303_Accel_Unified(54321);
 
-/*void acceldisplaySensorDetails(void)
+void acceldisplaySensorDetails(void)
 {
-	sensor_t sensor;
-	accel.getSensor(&sensor);
+	sensor_t accel_sensor;
+	accel.getSensor(&accel_sensor);
 	Serial.println("------------------------------------");
-	Serial.print  ("Sensor:       "); Serial.println(sensor.name);
-	Serial.print  ("Driver Ver:   "); Serial.println(sensor.version);
-	Serial.print  ("Unique ID:    "); Serial.println(sensor.sensor_id);
-	Serial.print  ("Max Value:    "); Serial.print(sensor.max_value); Serial.println(" m/s^2");
-	Serial.print  ("Min Value:    "); Serial.print(sensor.min_value); Serial.println(" m/s^2");
-	Serial.print  ("Resolution:   "); Serial.print(sensor.resolution); Serial.println(" m/s^2");
+	Serial.print  ("Sensor:       "); Serial.println(accel_sensor.name);
+	Serial.print  ("Driver Ver:   "); Serial.println(accel_sensor.version);
+	Serial.print  ("Unique ID:    "); Serial.println(accel_sensor.sensor_id);
+	Serial.print  ("Max Value:    "); Serial.print(accel_sensor.max_value); Serial.println(" m/s^2");
+	Serial.print  ("Min Value:    "); Serial.print(accel_sensor.min_value); Serial.println(" m/s^2");
+	Serial.print  ("Resolution:   "); Serial.print(accel_sensor.resolution); Serial.println(" m/s^2");
 	Serial.println("------------------------------------");
 	Serial.println("");
 	delay(500);
 }
-*/
+
 void magdisplaySensorDetails(void)
 {
-	sensor_t sensor;
-	mag.getSensor(&sensor);
+	sensor_t mag_sensor;
+	mag.getSensor(&mag_sensor);
 	Serial.println("------------------------------------");
-	Serial.print  ("Sensor:       "); Serial.println(sensor.name);
-	Serial.print  ("Driver Ver:   "); Serial.println(sensor.version);
-	Serial.print  ("Unique ID:    "); Serial.println(sensor.sensor_id);
-	Serial.print  ("Max Value:    "); Serial.print(sensor.max_value); Serial.println(" uT");
-	Serial.print  ("Min Value:    "); Serial.print(sensor.min_value); Serial.println(" uT");
-	Serial.print  ("Resolution:   "); Serial.print(sensor.resolution); Serial.println(" uT");
+	Serial.print  ("Sensor:       "); Serial.println(mag_sensor.name);
+	Serial.print  ("Driver Ver:   "); Serial.println(mag_sensor.version);
+	Serial.print  ("Unique ID:    "); Serial.println(mag_sensor.sensor_id);
+	Serial.print  ("Max Value:    "); Serial.print(mag_sensor.max_value); Serial.println(" uT");
+	Serial.print  ("Min Value:    "); Serial.print(mag_sensor.min_value); Serial.println(" uT");
+	Serial.print  ("Resolution:   "); Serial.print(mag_sensor.resolution); Serial.println(" uT");
 	Serial.println("------------------------------------");
 	Serial.println("");
 	delay(500);
@@ -66,7 +66,8 @@ void loop(void)
 	/* Get a new sensor event */
 	sensors_event_t mag_event;
 	mag.getEvent(&mag_event);
-	//accel.getEvent(&event);
+	sensors_event_t accel_event;
+	accel.getEvent(&accel_event);
 	
 	/* Display the results (magnetic vector values are in micro-Tesla (uT)) */
 	Serial.print("X: "); Serial.print(mag_event.magnetic.x); Serial.print("  ");
@@ -82,8 +83,8 @@ void loop(void)
 	 Serial.println(heading);
 	
 	/* Display the results (acceleration is measured in m/s^2) */
-	//Serial.print("X: "); Serial.print(event.acceleration.x); Serial.print("  ");
-	//Serial.print("Y: "); Serial.print(event.acceleration.y); Serial.print("  ");
-	//Serial.print("Z: "); Serial.print(event.acceleration.z); Serial.print("  ");Serial.println("m/s^2 ");
+	Serial.print("X: "); Serial.print(accel_event.acceleration.x); Serial.print("  ");
+	Serial.print("Y: "); Serial.print(accel_event.acceleration.y); Serial.print("  ");
+	Serial.print("Z: "); Serial.print(accel_event.acceleration.z); Serial.print("  ");Serial.println("m/s^2 ");
 	delay(500);
 }
