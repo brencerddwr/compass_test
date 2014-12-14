@@ -66,11 +66,7 @@ void loop(void)
 	/* Get a new sensor event */
 	sensors_event_t mag_event;
 	mag.getEvent(&mag_event);
-<<<<<<< HEAD
 	sensors_event_t accel_event;
-=======
-	sensors_event_t &accel_event;
->>>>>>> origin/master
 	accel.getEvent(&accel_event);
 	
 	/* Display the results (magnetic vector values are in micro-Tesla (uT)) */
