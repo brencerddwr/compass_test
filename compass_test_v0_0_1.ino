@@ -42,7 +42,7 @@ void magdisplaySensorDetails(void)
 void setup(void)
 {
 	Serial.begin(9600);
-	Serial.println("Magnetometer Test"); Serial.println("");
+	// Serial.println("Magnetometer Test"); Serial.println("");
 	
 	/* Enable auto-gain */
 	mag.enableAutoRange(true);
@@ -57,7 +57,7 @@ void setup(void)
 	}
 	
 	/* Display some basic information on this sensor */
-	magdisplaySensorDetails();
+	// magdisplaySensorDetails();
 	//acceldisplaySensorDetails();
 }
 
@@ -73,18 +73,15 @@ void loop(void)
 	Serial.print("X: "); Serial.print(mag_event.magnetic.x); Serial.print("  ");
 	Serial.print("Y: "); Serial.print(mag_event.magnetic.y); Serial.print("  ");
 	Serial.print("Z: "); Serial.print(mag_event.magnetic.z); Serial.print("  ");Serial.println("uT");
-	 float heading = (atan2(mag_event.magnetic.y,mag_event.magnetic.x) * 180) / PI;
-	 // Normalize to 0-360
-	 if (heading < 0)
-	 {
-		 heading = 360 + heading;
-	 }
-	 Serial.print("Compass Heading: ");
-	 Serial.println(heading);
 	
 	/* Display the results (acceleration is measured in m/s^2) */
 	Serial.print("X: "); Serial.print(accel_event.acceleration.x); Serial.print("  ");
 	Serial.print("Y: "); Serial.print(accel_event.acceleration.y); Serial.print("  ");
 	Serial.print("Z: "); Serial.print(accel_event.acceleration.z); Serial.print("  ");Serial.println("m/s^2 ");
+	/* Display calculated results */
+	Serial.print("Pitch: ");Serial.print(accel_event.acceleration.pitch);
+	Serial.print(" Roll: ");Serial.print(accel_event.acceleration.roll);
+	Serial.print(" Compass Heading: ");Serial.print(mag_event.magnetic.heading);Serial.print(" ");Serial.print(mag_event.magnetic.heading+360);
+		 
 	delay(500);
 }
