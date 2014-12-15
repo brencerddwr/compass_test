@@ -71,10 +71,8 @@
       <Value>C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/libraries</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries</Value>
-      <Value>D:/Users/Richard/Documents/Arduino/libraries/Adafruit_LSM303_U/utility</Value>
-      <Value>D:/Users/Richard/Documents/Arduino/libraries/Adafruit_LSM303_U</Value>
-      <Value>D:/Users/Richard/Documents/Arduino/libraries/Adafruit_Sensor/utility</Value>
-      <Value>D:/Users/Richard/Documents/Arduino/libraries/Adafruit_Sensor</Value>
+      <Value>D:/Users/Richard/Documents/Arduino/libraries/LSM303/utility</Value>
+      <Value>D:/Users/Richard/Documents/Arduino/libraries/LSM303</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries/Wire/utility</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries/Wire</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/variants/flora</Value>
@@ -109,10 +107,8 @@
       <Value>C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/libraries</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries</Value>
-      <Value>D:/Users/Richard/Documents/Arduino/libraries/Adafruit_LSM303_U/utility</Value>
-      <Value>D:/Users/Richard/Documents/Arduino/libraries/Adafruit_LSM303_U</Value>
-      <Value>D:/Users/Richard/Documents/Arduino/libraries/Adafruit_Sensor/utility</Value>
-      <Value>D:/Users/Richard/Documents/Arduino/libraries/Adafruit_Sensor</Value>
+      <Value>D:/Users/Richard/Documents/Arduino/libraries/LSM303/utility</Value>
+      <Value>D:/Users/Richard/Documents/Arduino/libraries/LSM303</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries/Wire/utility</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries/Wire</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/variants/flora</Value>
@@ -127,7 +123,7 @@
   <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
 </AvrGccCpp>
     </ToolchainSettings>
-    <VMSETTING_IncludePaths>C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino;C:/Program Files (x86)/Arduino/hardware/arduino/variants/flora;C:/Program Files (x86)/Arduino/libraries/Wire;C:/Program Files (x86)/Arduino/libraries/Wire/utility;D:/Users/Richard/Documents/Arduino/libraries/Adafruit_Sensor;D:/Users/Richard/Documents/Arduino/libraries/Adafruit_Sensor/utility;D:/Users/Richard/Documents/Arduino/libraries/Adafruit_LSM303_U;D:/Users/Richard/Documents/Arduino/libraries/Adafruit_LSM303_U/utility;C:/Program Files (x86)/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/arduino/libraries;C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers;D:/Users/Richard/Documents/Arduino/libraries;c:/program files (x86)/arduino/hardware/tools/avr/avr/include/;c:/program files (x86)/arduino/hardware/tools/avr/avr/include/avr/;c:/program files (x86)/arduino/hardware/tools/avr/avr/;c:/program files (x86)/arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/include/;;</VMSETTING_IncludePaths>
+    <VMSETTING_IncludePaths>C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino;C:/Program Files (x86)/Arduino/hardware/arduino/variants/flora;C:/Program Files (x86)/Arduino/libraries/Wire;C:/Program Files (x86)/Arduino/libraries/Wire/utility;D:/Users/Richard/Documents/Arduino/libraries/Adafruit_Sensor;D:/Users/Richard/Documents/Arduino/libraries/Adafruit_Sensor/utility;D:/Users/Richard/Documents/Arduino/libraries/Adafruit_LSM303_U;D:/Users/Richard/Documents/Arduino/libraries/Adafruit_LSM303_U/utility;C:/Program Files (x86)/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/arduino/libraries;C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers;D:/Users/Richard/Documents/Arduino/libraries;c:/program files (x86)/arduino/hardware/tools/avr/avr/include/;c:/program files (x86)/arduino/hardware/tools/avr/avr/include/avr/;c:/program files (x86)/arduino/hardware/tools/avr/avr/;c:/program files (x86)/arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/include/;;D:/Users/Richard/Documents/Arduino/libraries/LSM303;D:/Users/Richard/Documents/Arduino/libraries/LSM303/utility;</VMSETTING_IncludePaths>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <ToolchainSettings>
@@ -160,10 +156,8 @@
       <Value>C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/libraries</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries</Value>
-      <Value>D:/Users/Richard/Documents/Arduino/libraries/Adafruit_LSM303_U/utility</Value>
-      <Value>D:/Users/Richard/Documents/Arduino/libraries/Adafruit_LSM303_U</Value>
-      <Value>D:/Users/Richard/Documents/Arduino/libraries/Adafruit_Sensor/utility</Value>
-      <Value>D:/Users/Richard/Documents/Arduino/libraries/Adafruit_Sensor</Value>
+      <Value>D:/Users/Richard/Documents/Arduino/libraries/LSM303/utility</Value>
+      <Value>D:/Users/Richard/Documents/Arduino/libraries/LSM303</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries/Wire/utility</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries/Wire</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/variants/flora</Value>
@@ -198,10 +192,8 @@
       <Value>C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/libraries</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries</Value>
-      <Value>D:/Users/Richard/Documents/Arduino/libraries/Adafruit_LSM303_U/utility</Value>
-      <Value>D:/Users/Richard/Documents/Arduino/libraries/Adafruit_LSM303_U</Value>
-      <Value>D:/Users/Richard/Documents/Arduino/libraries/Adafruit_Sensor/utility</Value>
-      <Value>D:/Users/Richard/Documents/Arduino/libraries/Adafruit_Sensor</Value>
+      <Value>D:/Users/Richard/Documents/Arduino/libraries/LSM303/utility</Value>
+      <Value>D:/Users/Richard/Documents/Arduino/libraries/LSM303</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries/Wire/utility</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries/Wire</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/variants/flora</Value>
@@ -216,7 +208,7 @@
   <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
 </AvrGccCpp>
     </ToolchainSettings>
-    <VMSETTING_IncludePaths>C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino;C:/Program Files (x86)/Arduino/hardware/arduino/variants/flora;C:/Program Files (x86)/Arduino/libraries/Wire;C:/Program Files (x86)/Arduino/libraries/Wire/utility;D:/Users/Richard/Documents/Arduino/libraries/Adafruit_Sensor;D:/Users/Richard/Documents/Arduino/libraries/Adafruit_Sensor/utility;D:/Users/Richard/Documents/Arduino/libraries/Adafruit_LSM303_U;D:/Users/Richard/Documents/Arduino/libraries/Adafruit_LSM303_U/utility;C:/Program Files (x86)/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/arduino/libraries;C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers;D:/Users/Richard/Documents/Arduino/libraries;c:/program files (x86)/arduino/hardware/tools/avr/avr/include/;c:/program files (x86)/arduino/hardware/tools/avr/avr/include/avr/;c:/program files (x86)/arduino/hardware/tools/avr/avr/;c:/program files (x86)/arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/include/;;</VMSETTING_IncludePaths>
+    <VMSETTING_IncludePaths>C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino;C:/Program Files (x86)/Arduino/hardware/arduino/variants/flora;C:/Program Files (x86)/Arduino/libraries/Wire;C:/Program Files (x86)/Arduino/libraries/Wire/utility;D:/Users/Richard/Documents/Arduino/libraries/Adafruit_Sensor;D:/Users/Richard/Documents/Arduino/libraries/Adafruit_Sensor/utility;D:/Users/Richard/Documents/Arduino/libraries/Adafruit_LSM303_U;D:/Users/Richard/Documents/Arduino/libraries/Adafruit_LSM303_U/utility;C:/Program Files (x86)/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/arduino/libraries;C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers;D:/Users/Richard/Documents/Arduino/libraries;c:/program files (x86)/arduino/hardware/tools/avr/avr/include/;c:/program files (x86)/arduino/hardware/tools/avr/avr/include/avr/;c:/program files (x86)/arduino/hardware/tools/avr/avr/;c:/program files (x86)/arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/include/;;D:/Users/Richard/Documents/Arduino/libraries/LSM303;D:/Users/Richard/Documents/Arduino/libraries/LSM303/utility;</VMSETTING_IncludePaths>
   </PropertyGroup>
   <ItemGroup>
     <None Include="compass_test_v0_0_1.ino">
