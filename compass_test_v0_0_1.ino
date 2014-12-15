@@ -28,6 +28,9 @@ void setup() {
     +32767, +32767, +32767      };
   // setup neopixels
   FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);
+  fill_solid ( &(leds[0]), NUM_LEDS, CRGB::Black);
+  FastLED.show();
+  delay(1000);
   FastLED.setBrightness(96);
 }
 void loop(void)
