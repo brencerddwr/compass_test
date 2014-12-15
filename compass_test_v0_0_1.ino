@@ -20,8 +20,8 @@ void loop(void)
 	/* Get a new sensor event */
 	compass.read();
 	double heading = compass.heading();
-	double roll = (atan2(-compass.a.y,compass.a.y)*180)/PI;
-	double pitch = (atan2(compass.a.x,sqrt(compass.a.y*compass.a.y+compass.a.z*compass.a.z))*180)/PI;
+	double roll = (atan2(-compass.a.y,compass.a.x)*180)/PI;
+	double pitch = (atan2(compass.a.x,sqrt(pow(compass.a.y,2)+pow(compass.a.z,2)))*180)/PI;
 	
 	Serial.print("X: "); Serial.print(compass.m.x); Serial.print("  ");
 	Serial.print("Y: "); Serial.print(compass.m.y); Serial.print("  ");
