@@ -16,9 +16,7 @@
 #define __AVR__
 extern "C" void __cxa_pure_virtual() {;}
 
-void acceldisplaySensorDetails(void);
-void magdisplaySensorDetails(void);
-void setup(void);
+//
 void loop(void);
 
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\variants\flora\pins_arduino.h" 
