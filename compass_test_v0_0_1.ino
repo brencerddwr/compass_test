@@ -23,9 +23,9 @@ void setup() {
    	program to determine appropriate values for your particular unit.
    	*/
   compass.m_min = (LSM303::vector<int16_t>){
-    -32767, -32767, -32767      };
+    -1162, -1032, -491    };
   compass.m_max = (LSM303::vector<int16_t>){
-    +32767, +32767, +32767      };
+    +628, +347, +526      };
   // setup neopixels
   FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);
   fill_solid ( &(leds[0]), NUM_LEDS, CRGB::Black);
@@ -38,8 +38,8 @@ void loop(void)
   /* Get a new sensor event */
   compass.read();
   double heading = compass.heading();
-  double roll = (atan2(-compass.a.y,compass.a.x)*180)/PI;
-  double pitch = (atan2(compass.a.x,sqrt(pow(compass.a.y,2)+pow(compass.a.z,2)))*180)/PI;
+  float roll = atan(compass.a.y/sqrt(pow(compass.a.z,2)+pow(compass.a.z,2)))*(180/PI);
+  float pitch = atan(compass.a.x/sqrt(pow(compass.a.y,2)+pow(compass.a.z,2)))*(180/PI);
 
   Serial.print("X: "); 
   Serial.print(compass.m.x); 
@@ -84,7 +84,7 @@ void loop(void)
   }
 
   FastLED.show();
-  FastLED.delay(500);
+  FastLED.delay(250);
 }
 
 
